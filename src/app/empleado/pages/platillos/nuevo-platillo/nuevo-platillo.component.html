@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Platillos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #006B6A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 600px;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .form-container label {
+            margin-bottom: 5px;
+        }
+        .form-container input, .form-container select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-container .actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container .actions .register {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .form-container .actions .clear {
+            background-color: #ff4d4d;
+            color: #ffffff;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #f2f2f2;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .campa{
+    position: relative;
+    left:80%;
+   bottom: 50%;
+   text-decoration: none;
+   pointer-events: visible;
+   
+}
+.atras{
+    position: relative;
+    top:70%;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="form-container">
+        <a href="#" class="atras"> <i class="fa-solid fa-angle-left" href="/src/app/empleado/pages/platillos/platillos/platillos.component.html" ></i>Atras </a>
+    <a href="" class="campa"><i class="fa-solid fa-bell" values="campa"></i></a>
+        <h2>Registrar Platillo</h2>
+        <form>
+            <label for="nombre">Platillo:</label>
+            <input type="text" id="Platillo" name="Platillo" value="">
+            
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" value="0">
+            
+            <label for="descuento">Descuento:</label>
+            <input type="number" id="descuento" name="descuento" value="0">
+            
+            <label for="orden">Orden</label>
+            <input type="number" id="proveedor" name="proveedor" value="0">
+            
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" value="0">
+            
+            
+            <div class="actions">
+                <button type="button" class="register">Registrar</button>
+                <button type="button" class="clear">Limpiar datos</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

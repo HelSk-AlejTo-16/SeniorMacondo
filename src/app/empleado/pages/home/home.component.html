@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4">
+    <link rel="stylesheet" href="home.component.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="butonera-puestos">
+        <P class="Text">Puestos:</P>
+        <button (click)="comida()" >P.Tacos</button>
+        <button>P.Burritos</button>
+        <button>P.Pizzas</button>
+        <button>P.Tienda</button>
+        <button>P.Gorditas</button>
+        <button>P.Café</button>
+        <button>P.Juegos</button>
+    </div>
+    <div class="Botones">
+        <button mat-buttom (click)="comida()">
+        Registrar Llegada
+        </button>
+        <button>
+            Registrar Salida
+        </button>
+    </div>
+    
+  
+<div class="elementoscarrusel contenedor">
+<div class="contenedor-titulo-controles">
+    <h3>Puestos</h3>
+    <div class="indicadores">
+       
+    </div>
+    </div>
+    <div class="contenedor-principal">
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class='fas fa-angle-left'></i>
+          </button>
+          <div class="contenedor-carrusel">
+            <div class="carousel">
+                <div class="puesto">
+                    <a href="#"><img src="../assets/1.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="img/2.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="img/3.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="img/4.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="../../../assets/1.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <img src="img/6.png" alt="">
+                </div> <div class="puesto">
+                    <a href="#"><img src="img/7.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="img/2.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="img/3.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="img/4.png" alt="a"></a>
+                </div>
+                <div class="puesto">
+                    <a href="#"><img src="./assets/1.png" alt="b"></a>
+                </div>
+                <div class="puesto">
+                    <img src="img/6.png" alt="">
+                </div> <div class="puesto">
+                    <a href="#"><img src="img/7.png" alt="a"></a>
+                </div>
+                
+            </div>
+          </div>
+
+
+
+          <button role="button" id="flecha-derecha" class="flecha-derecha"><i class='fas fa-angle-right'></i>
+          </button>
+    </div>
+
+
+
+
+</div>
+<script>
+    const fila = document.querySelector('contenedor-carrusel');
+    const peliculas = document.querySelectorAll('.puesto');
+    const flechaIzquierda = document.getElementById('flecha-izquierda');
+    const flechaDerecha = document.getElementById('flecha-derecha');
+
+    flechaDerecha.addEventListener('click',()=>{
+        fila.scrollLeft += fila.offsetWidth;
+        const indicadorActivo = document.querySelector('.indicadores .active');
+        if(indicadorActivo.nextSibling){
+            indicadorActivo.nextSibling.classList.add('active');
+            indicadorActivo.classList.remove('active');
+        }
+    });
+    flechaIzquierda.addEventListener('click',()=>{
+        fila.scrollright -= fila.offsetWidth;
+        const indicadorActivo = document.querySelector('.indicadores .active');
+        if(indicadorActivo.previousElementSibling){
+            indicadorActivo.previousElementSibling.classList.add('active');
+            indicadorActivo.classList.remove('active');
+        }
+    });
+
+    const numeroPaginas = Math.ceil(peliculas.length / 3);
+    for(let i = 0; i <numeroPaginas; i++){
+        const indicador = document.createElement('button');
+        if(i === 0){
+            indicador.classList.add('active');
+
+}
+        document.querySelector('.indicadores').appendChild(indicador);
+        indicador.addEventListener('click', (e) => {
+    fila.scrollLeft = i * fila.offsetWidth;
+
+    document.querySelector('.indicadores .active').classList.remove('active');
+    e.target.classList.add('active');
+
+
+});
+    }
+    peliculas.forEach((peliculas) => {
+        peliculas.addEventListener('mouseenter', (e) => {
+            const elemento = e.currentTarget;
+            setTimeout(()=>{
+                peliculas.forEach(peliculas => peliculas.classList.remove('hover'));
+                elemento.classList.add('hover');
+            });
+        });
+    });
+    fila.addEventListener('mouseleave', ()=> {
+        peliculas.forEach(peliculas => peliculas.classList.remove('hover'));
+
+    });
+</script>
+
+
+</body>
+</html>

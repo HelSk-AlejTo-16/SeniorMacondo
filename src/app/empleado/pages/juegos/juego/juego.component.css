@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2a9d8f;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: white;
+    border: 3px solid #264653;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width:4000px ;
+}
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #264653;
+    color: white;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-cancelar {
+    background-color: #e76f51;
+    color: white;
+}
+.btn-guardar {
+    background-color: #2a9d8f;
+    color: white;
+}
+.btn-trash {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-trash img {
+    width: 20px;
+    height: 20px;
+}

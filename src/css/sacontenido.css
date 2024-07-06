@@ -1,0 +1,37 @@
+.fondoPage {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(192, 228, 222);
+    height: 70%;
+    width: 90%;
+}
+
+.home {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 90%;
+}
+
+.buttonOption {
+    width: 20rem; /* Establece el ancho deseado */
+    height: 4rem; /* Establece la altura deseada */
+    font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+    background-color:  rgb(255, 247, 241); /* Color de fondo del botón */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    color: rgb(46, 22, 7); /* Color del texto */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    
+  }
+
+  .buttonOption:hover {
+    background-color: rgb(8, 125, 107);
+    color:rgb( 255, 255,255);
+  }

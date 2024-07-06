@@ -1,0 +1,139 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teachers&display=swap');
+@import url('https://db.onlinewebfonts.com/c/e785a7f1d551f5d098f780bbd15e1ef3?family=Examiner+NF+W01+Bold');
+
+
+#tituloMacondo {
+  color:rgb(46, 22, 7);
+    font-size: 2.2rem;
+    display: inline;
+    margin:0;
+    position: relative;
+}
+
+#indiceMacondo {
+    color:rgb( 255, 255,255);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    display: inline;
+    
+}
+
+.balsamiq-sans-regular {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .teachers {
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .Examiner {
+    font-family: 'Examiner NF W01 Bold';
+  }
+
+  .NavMacondo {
+    background-color: rgb(8,125,107);
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .fondoCont {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(192, 228, 222);
+    height: 70%;
+    width: 90%;
+}
+
+  .buttonIngresar {
+    margin-left: auto;
+    width: 6rem; /* Establece el ancho deseado */
+    height: 2.5rem; /* Establece la altura deseada */
+    font-size: 1rem; /* Ajusta el tamaño del texto si es necesario */
+    background-color:  rgb(10, 94, 81); /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    
+  }
+
+  .buttonIngresar:hover {
+    background-color: rgb(70, 46, 31);
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+  }
+
+  .button {
+    margin: 0.5rem;
+    width: 9rem; /* Establece el ancho deseado */
+    height: 2.5rem; /* Establece la altura deseada */
+    font-size: 1rem; /* Ajusta el tamaño del texto si es necesario */
+    background-color:  rgb(255, 247, 241); /* Color de fondo del botón */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    color: rgb(46, 22, 7); /* Color del texto */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    
+  }
+
+  .button:hover {
+    background-color: rgb(8, 125, 107);
+    color:rgb( 255, 255,255);
+  }
+  
+  /*.fixed-column {
+    background-color: #f4f4f4;
+    height: 100vh;
+    position: fixed;
+    width: 200px;
+  }
+  .flexible-column {
+    margin-left: 200px;
+    padding: 20px;
+    overflow-y: auto;
+  } */
+
+
+.flexible-column {
+  padding: 20px;
+  overflow-y: auto;
+}
+.fixed-column {
+  align-items: center;
+  background-color: none;
+  height: relative;
+  position: fixed;
+  right: 0;
+  width: 200px;
+
+}
+
+#fondo {
+
+  background-image: url('https://th.bing.com/th/id/R.ff6867753509b17e13cc921b47cccc0a?rik=yvrui%2boGJEdhqQ&pid=ImgRaw&r=0');
+  background-attachment: fixed;  
+ /*background-position: center center;*/
+ background-size: cover;
+}
+
+
