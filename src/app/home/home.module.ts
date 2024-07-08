@@ -6,6 +6,9 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { SolicitarComponent } from './pages/solicitar/solicitar.component';
+import { MaterialModule } from '../material/material.module';
+import { ProductoComponent } from './pages/producto/producto.component';
+import { MasProductoComponent } from './pages/mas-producto/mas-producto.component';
 
 
 @NgModule({
@@ -13,11 +16,14 @@ import { SolicitarComponent } from './pages/solicitar/solicitar.component';
     LayoutPageComponent,
     TiendaComponent,
     AcercadeComponent,
-    SolicitarComponent
+    SolicitarComponent,
+    ProductoComponent,
+    MasProductoComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MaterialModule
   ],
   exports: [
     LayoutPageComponent,

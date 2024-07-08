@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout-page',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class LayoutPageComponent {
+  constructor(private router: Router) { }
 
+  regresar() {
+    this.router.navigate(['/WebSrMacondo/home']);
+  }
 }

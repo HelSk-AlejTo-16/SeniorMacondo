@@ -17,54 +17,21 @@ const routes: Routes = [
     path: '',
     component:LayoutPageComponent,
     children:[
-     {path:'home', component:HomeComponent, title:'Super Administrador'}, 
-     {
-      path:'empleados', 
-      component:EmpleadoComponent,
-      children:[
-        {
-          path:'nuevo-empleado',
-          component:NuevoEmpleadoComponent
-        },
-        {
-          path:'empleado',
-          component:EmpleadoComponent
-        },
-      ],
-      title:'Empleados'
-     }, 
-     {
-      path:'servicios', 
-      component:ServiciosComponent,
-      children:[
-        {
-          path:'nuevo-servicio',
-          component:NuevoServicioComponent
-        },
-        {
-          path:'servicio',
-          component:ServicioComponent
-        },
-      ], 
-      title:'Servicios'
-     }, 
-     {
-      path:'sucursales', 
-      component:SucursalesComponent,
-      children:[
-        {
-          path:'nueva-sucursal',
-          component:NuevaSucursalComponent
-        },
-        {
-          path:'sucursal',
-          component:SucursalComponent
-        },
-      ], 
-      title:'Sucursales'
-     },
-     {path: '**',redirectTo:'home'},
+      {path:'home', component:HomeComponent, title:'Super Administrador'},
 
+      {path:'empleados',component:EmpleadosComponent},
+      {path:'nuevo-empleado',component:NuevoEmpleadoComponent},
+      {path:'empleado',component:EmpleadoComponent},
+      
+ 
+      {path:'servicios', component:ServiciosComponent}, 
+      {path:'nuevo-servicio',component:NuevoServicioComponent},
+      {path:'servicio',component:ServicioComponent},
+ 
+ 
+      {path:'sucursales',component:SucursalesComponent,title:'Sucursales'},
+      {path:'nueva-sucursal',component:NuevaSucursalComponent},
+      {path:'sucursal', component:SucursalComponent},
     ]
 }
 ];

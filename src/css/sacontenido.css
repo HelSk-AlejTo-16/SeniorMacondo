@@ -1,37 +1,170 @@
+@import url('https://db.onlinewebfonts.com/c/e785a7f1d551f5d098f780bbd15e1ef3?family=Examiner+NF+W01+Bold');
+
 .fondoPage {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(192, 228, 222);
-    height: 70%;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-items: center;
+  justify-content: center;*/
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: rgba(255, 255, 255, 0.842);*/
+  background-color: rgba(8, 125, 107, 0.87);
+  height: 40rem;
+  width: 80rem;
+}
+
+.button {
+  margin-right: 2rem;
 }
 
 .home {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    height: 70%;
-    width: 90%;
+  height: 80%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+width: 80%;
+display: flex;
+justify-content: flex-end;
+}
+
+.button-group {
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 .buttonOption {
-    width: 20rem; /* Establece el ancho deseado */
-    height: 4rem; /* Establece la altura deseada */
-    font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
-    background-color:  rgb(255, 247, 241); /* Color de fondo del botón */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    color: rgb(46, 22, 7); /* Color del texto */
-    border: none; /* Elimina el borde por defecto */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-    
-  }
+  width: 15rem; /* Establece el ancho deseado */
+  height: 3.5rem; /* Establece la altura deseada */
+  font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+  background-color:  rgb(255, 247, 241); /* Color de fondo del botón */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  color: rgb(46, 22, 7); /* Color del texto */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  margin: 0.5rem;
+  
+}
 
-  .buttonOption:hover {
-    background-color: rgb(8, 125, 107);
-    color:rgb( 255, 255,255);
-  }
+.buttonOption:hover {
+  background-color: rgb(8, 125, 107);
+  color:rgb( 255, 255,255);
+}
+
+.tableContainer {
+  display: flex;
+  height: 15rem;
+  width: 70rem;
+  overflow-y: auto;
+}
+
+
+ .align {
+  display:flex;
+  justify-content: center;
+ }
+
+ /*Tabla estilo*/
+ .styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+
+.styled-table tbody {
+  background-color: #ffffff;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #1a684c; /* Cambia el color de fondo al pasar el ratón */
+  color: #ffffff;
+}
+
+.styled-table thead {
+  background-color: #f2f2f2;
+}
+
+.Examiner {
+  font-family: 'Examiner NF W01 Bold';
+  font-size: 3rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+/*Botones de agregar*/
+.botonesAgregar {
+  background-color: rgb(7, 70, 60);
+  color: rgb(255, 255, 255); /* Color del texto */
+  width: 15rem; /* Establece el ancho deseado */
+  height: 3rem; /* Establece la altura deseada */
+  font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  margin-top: 1rem;
+
+}
+
+.botonesAgregar:hover {
+  background-color: rgb(46, 22, 7);
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+
+/*Botones de regresar*/
+.botonesRegresar {
+  background-color: rgb(7, 70, 60);
+  width: 7rem; /* Establece el ancho deseado */
+  height: 3rem; /* Establece la altura deseada */
+  font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+  color: rgb(255, 255, 255); /* Color del texto */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.botonesRegresar:hover {
+  background-color: rgb(46, 22, 7);
+  color: rgb(255, 255, 255); /* Color del texto */
+}
+
+/*para los botones de regresar y home*/
+.containerBotones {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+  
+.button-groupBotones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.contenedorInfo {
+  background-color: #ffffff;
+  width: 80%;
+  height: 50%;
+  overflow-y: auto;
+  align-items: normal;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}

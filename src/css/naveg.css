@@ -4,15 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Teachers&display=swap');
 @import url('https://db.onlinewebfonts.com/c/e785a7f1d551f5d098f780bbd15e1ef3?family=Examiner+NF+W01+Bold');
 
-
+/*Para el titulo de cada encabezado*/
 #tituloMacondo {
   color:rgb(46, 22, 7);
     font-size: 2.2rem;
     display: inline;
-    margin:0;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
     position: relative;
 }
 
+/*el subtitulo del encabezado*/
 #indiceMacondo {
     color:rgb( 255, 255,255);
     font-size: 1.2rem;
@@ -23,12 +27,13 @@
     
 }
 
+/*Fuente del indiceMacondo*/
 .balsamiq-sans-regular {
     font-family: "Balsamiq Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-
+/*Fuente que se pensaba usar*/
   .teachers {
     font-family: "Teachers", sans-serif;
     font-optical-sizing: auto;
@@ -40,26 +45,21 @@
     font-family: 'Examiner NF W01 Bold';
   }
 
+  /*El fondo de encabezado*/
   .NavMacondo {
     background-color: rgb(8,125,107);
-    padding: 1rem;
+    padding: 0.5rem;
     display:flex;
+    position: relative;
     align-items: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
   }
 
-  .fondoCont {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(192, 228, 222);
-    height: 70%;
-    width: 90%;
-}
-
+  /*Boton de acceso*/
   .buttonIngresar {
     margin-left: auto;
+    margin-right: 2rem;
     width: 6rem; /* Establece el ancho deseado */
     height: 2.5rem; /* Establece la altura deseada */
     font-size: 1rem; /* Ajusta el tamaño del texto si es necesario */
@@ -72,15 +72,18 @@
     
   }
 
+  /*Boton ingresar cuando se selecciona*/
   .buttonIngresar:hover {
     background-color: rgb(70, 46, 31);
   }
 
+  /*Contenedor de los botones laterales*/
   .button-container {
     display: flex;
     gap: 10px; /* Espacio entre botones */
   }
 
+  /*Botones laterales*/
   .button {
     margin: 0.5rem;
     width: 9rem; /* Establece el ancho deseado */
@@ -96,9 +99,11 @@
     
   }
 
+  /*Botones laterales cuando se les pasa por encima*/
   .button:hover {
-    background-color: rgb(8, 125, 107);
+    background-color: rgb(10, 94, 81);
     color:rgb( 255, 255,255);
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.384);
   }
   
   /*.fixed-column {
@@ -117,7 +122,21 @@
 .flexible-column {
   padding: 20px;
   overflow-y: auto;
+  overflow-x: auto;
+  width: 67rem;
+  height: auto;
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: rgba(255, 255, 255, 0.815);
+
 }
+
+.desbordo {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
 .fixed-column {
   align-items: center;
   background-color: none;
@@ -125,6 +144,8 @@
   position: fixed;
   right: 0;
   width: 200px;
+  margin-top: 2rem;
+
 
 }
 
@@ -136,4 +157,35 @@
  background-size: cover;
 }
 
+.containerRigth {
+  position: relative;
+  background-color: rgba(66, 116, 99, 0.664);
+  height: 30rem;
+  width: 13rem;
+  display: flex; /* Usa flexbox para centrar el contenido interno */
+  justify-content: center; /* Centra horizontalmente el contenido interno */
+  align-items: center; /* Centra verticalmente el contenido interno */
+}
 
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ExaminerSub {
+  font-family: 'Examiner NF W01 Bold';
+  color: rgb(58, 26, 14); 
+  text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: rgb(8, 125, 107); /* Color de fondo del pie de página */
+  color: white; /* Color del texto del pie de página */
+  padding: 0.5rem; /* Relleno interno del pie de página */
+  text-align: center; /* Centra el texto dentro del pie de página */
+  margin: 0; /* Margen entre el pie de página y el resto del contenido */
+  margin-top: 2rem; /* Empuja el pie de página hacia la parte inferior de la página */
+}

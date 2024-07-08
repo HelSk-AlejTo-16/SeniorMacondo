@@ -2,16 +2,40 @@
 <nav class="NavMacondo">
     <!--<img src="https://th.bing.com/th/id/OIP.6kd2LWJh0qQYiQHz6Al1pgHaHa?rs=1&pid=ImgDetMain">-->
     <img url="../../../../../public/SrMacondo.png">
-    <h1 id="tituloMacondo" class="Examiner">Emplados </h1>
-    <p id="indiceMacondo" class="balsamiq-sans-regular">Sr. Macondo</p>
+    <h1 id="tituloMacondo" class="Examiner">Sr. Macondo </h1>
+    <p id="indiceMacondo" class="balsamiq-sans-regular">Web</p>
     <div style="margin-left: auto;">     
-        <button class="buttonIngresar" (click)="regresar()">
-            Salir
+        <button class="buttonIngresar" (click)="login()">
+            Acceder
         </button>
     </div>
 </nav>
+
 <body id="fondo">
-    <router-outlet></router-outlet>
+
+    <div class="fixed-column">
+        <div class="containerRigth">
+            <div class="button-group">
+                <div><p class="ExaminerSub">Bienvenido</p></div>
+                <button class="button">
+                    Acerca de
+                </button>
+                <button class="button">
+                    Notificame
+                </button>
+            </div>
+        </div>
+        
+            
+    </div>
+
+    <div class="flexible-column">
+        <router-outlet></router-outlet>
+    </div>
+    
 </body>
 
-<router-outlet></router-outlet>
+<!--Solo presente en la pagina home-->
+<footer class="footer">
+    <p>Gracias por su preferencia</p>
+</footer>
