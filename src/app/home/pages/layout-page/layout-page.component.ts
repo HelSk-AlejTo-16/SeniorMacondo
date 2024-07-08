@@ -8,9 +8,10 @@ import { Router } from '@angular/router';
 })
 export class LayoutPageComponent {
   
-  constructor(private router:Router){}
-  regresar() {
-    this.router.navigate(['/WebSrMacondo/home']);
+  constructor(private router: Router) { }
+
+  login() {
+    this.router.navigate(['/ingresar/login']);
   }
 
 }
