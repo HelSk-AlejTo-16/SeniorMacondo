@@ -43,12 +43,21 @@
             </tr>
         </table>
         <div class="actions">
-            <div>
-                <button class="add">+</button>
-                <button class="delete">Eliminar</button>
-            </div>
-            <button class="save">Guardar</button>
+          
+
+<!-- app.component.html -->
+<button class="add">+</button>
+<button class="delete" (click)="openModal()">Eliminar</button>
+<div>
+<dialog #modal>
+    <h2>¿Estas seguro de eliminar?</h2>
+    <button (click)="closeModal()">Eliminar</button>
+</dialog>
+
+</div>
+<button class="save">Guardar</button>           
         </div>
     </div>
 </body>
 </html>
+

@@ -10,7 +10,7 @@ export class HomeComponent {
   constructor(private router: Router) { }
 
  comida() {
-  this.router.navigate(['../empleado/']);
+  this.router.navigate(['../empleado/crearventa/crearventa.html']);
 }
 regresar() {
   this.router.navigate(['../WebSrMacondo/home']);

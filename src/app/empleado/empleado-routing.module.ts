@@ -8,7 +8,9 @@ import { PlatillosComponent } from './pages/platillos/platillos/platillos.compon
 import { VentaComponent } from './pages/ventas/venta/venta.component';
 import { JuegoComponent } from './pages/juegos/juego/juego.component';
 import { NuevoPlatilloComponent } from './pages/platillos/nuevo-platillo/nuevo-platillo.component';
-import { CrearventaComponent } from './pages/ventas/crear-venta/crearventa.component';
+import { CrearventaComponent } from './pages/crear-venta/crearventa.component';
+
+
 
 const routes: Routes = [
   {
@@ -22,8 +24,10 @@ const routes: Routes = [
      {path:'platillos', component:PlatillosComponent, title:'Platillos'}, 
      {path:'venta', component:VentaComponent, title:'Venta'}, 
      {path:'platillosnuevo', component:NuevoPlatilloComponent, title:'AgregarPlatilos'}, 
-     {path: '**',redirectTo:'home'},
-     {path:'crearventa', component:CrearventaComponent, title:'Crear Venta'}
+     {path: 'crear', component:CrearventaComponent},
+     {path: '**',redirectTo:'home'}
+   
+  
      
 
     ]
