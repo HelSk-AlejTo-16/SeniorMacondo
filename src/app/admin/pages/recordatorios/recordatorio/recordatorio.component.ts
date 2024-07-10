@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-recordatorio',
   templateUrl: './recordatorio.component.html',
-  styles: ``
+  styleUrls: ['./recordatorio.component.css']
 })
 export class RecordatorioComponent {
 

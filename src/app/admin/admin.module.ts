@@ -12,6 +12,8 @@ import { NuevoProveedorComponent } from './pages/proveedores/nuevo-proveedor/nue
 import { RecordatoriosComponent } from './pages/recordatorios/recordatorios/recordatorios.component';
 import { RecordatorioComponent } from './pages/recordatorios/recordatorio/recordatorio.component';
 import { NuevoRecordatorioComponent } from './pages/recordatorios/nuevo-recordatorio/nuevo-recordatorio.component';
+import { AsistenciaComponent } from './pages/asistencia/asistencia.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { NuevoRecordatorioComponent } from './pages/recordatorios/nuevo-recordat
              NuevoProveedorComponent,
              RecordatoriosComponent,
              RecordatorioComponent,
-             NuevoRecordatorioComponent
+             NuevoRecordatorioComponent,
+             AsistenciaComponent
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule
   ],
   exports: [
     LayoutPageComponent,

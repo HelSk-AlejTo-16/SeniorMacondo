@@ -1,0 +1,113 @@
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f5d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #db6708;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+  color:rgb(46, 22, 7);
+  font-size: 4 rem;
+  display: inline;
+  margin:0;
+  }
+  
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: rgb(8, 125, 107);
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container button:hover {
+    background-color: rgb(46, 22, 7);
+}
+
+  .buttonIngresar {
+    background-color:  rgb(8, 125, 107);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonIngresar:hover {
+    background-color:  rgb(46, 22, 7);
+  }
+  
+  .icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #db6708;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f8f8f8;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .buttonPrimary {
+    background-color: rgb(8, 125, 107);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonPrimary:hover {
+    background-color: rgb(46, 22, 7);
+  }
+  
