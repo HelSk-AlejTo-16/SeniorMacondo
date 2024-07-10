@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-venta',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class VentaComponent {
+  @ViewChild('modal') modal: any;
 
+  openModal() {
+    this.modal.nativeElement.showModal();
+  }
+
+  closeModal() {
+    this.modal.nativeElement.close();
 }
+}
+

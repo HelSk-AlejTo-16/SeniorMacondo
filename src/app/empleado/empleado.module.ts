@@ -11,7 +11,7 @@ import { NuevoPlatilloComponent } from './pages/platillos/nuevo-platillo/nuevo-p
 import { PlatilloComponent } from './pages/platillos/platillo/platillo.component';
 import { VentaComponent } from './pages/ventas/venta/venta.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component';
-import { CrearventaComponent } from './pages/ventas/crear-venta/crearventa.component';
+import { CrearventaComponent } from './pages/crear-venta/crearventa.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,8 @@ import { CrearventaComponent } from './pages/ventas/crear-venta/crearventa.compo
        VentaComponent,
        MensajesComponent,
        CrearventaComponent
+      
+   
       
   ],
   imports: [
@@ -43,6 +45,8 @@ import { CrearventaComponent } from './pages/ventas/crear-venta/crearventa.compo
        VentaComponent,
        MensajesComponent,
        CrearventaComponent
+      
+   
   ]
 })
 export class EmpleadoModule { }
