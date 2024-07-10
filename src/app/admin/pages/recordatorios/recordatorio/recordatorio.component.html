@@ -1,1 +1,42 @@
-<p>recordatorio works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Recordatorios</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="side-button">< Atrás</button>
+        </div>
+        <div class="content">
+            <div class="main">
+                <div class="input-container">
+                    <label for="reminder-input">Escriba el recordatorio:</label>
+                    <textarea id="reminder-input" placeholder="Escriba el recordatorio"></textarea>
+                </div>
+                <div class="dropdown-container">
+                    <select class="dropdown">
+                        <option value="todas">Todas</option>
+                        <option value="E001">E001</option>
+                        <option value="E002">E002</option>
+                    </select>
+                    <button class="send-btn">Enviar a</button>
+                </div>
+                <button class="create-btn">Crear Recordatorio</button>
+                <div class="reminders-list">
+                    <div class="reminder">
+                        <h2>Recordatorio 1</h2>
+                        <p>xxxxxxxxxxxxxxxxxxx</p>
+                    </div>
+                    <div class="reminder">
+                        <h2>Recordatorio 2</h2>
+                        <p>xxxxxxxxxxxxxxxxxxx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

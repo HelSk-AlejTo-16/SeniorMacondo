@@ -1,1 +1,64 @@
-<p>proveedores works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Proveedores</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Productos</h1>
+            <div class="search-container">
+                <input type="text" name="query" class="search-box" placeholder="Buscar" required>
+                <button class="buttonIngresar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código Proveedor</th>
+                    <th>Nombre Proveedor</th>
+                    <th>Fecha</th>
+                    <th>Llegada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P01</td>
+                    <td>Grupo Marinela</td>
+                    <td>16/01/24</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>P02</td>
+                    <td>Grupo Boing</td>
+                    <td>02/06/24</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>P03</td>
+                    <td>Mondelez</td>
+                    <td>03/06/24</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>P04</td>
+                    <td>Dulcería Karlita</td>
+                    <td>04/06/24</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button class="delete-btn">Eliminar Proveedor</button>
+            <button class="add-btn">Agregar Proveedor</button>
+        </div>
+    </div>
+</body>
+</html>
+

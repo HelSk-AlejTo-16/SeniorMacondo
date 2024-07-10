@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre del Empleado</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                    <th>Registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let empleado of empleados">
+                    <td><span class="icon">&#128100;</span> {{empleado.nombre}}</td>
+                    <td>
+                        <span *ngIf="!empleado.editing">{{empleado.entrada}}</span>
+                        <input *ngIf="empleado.editing" [(ngModel)]="empleado.entrada">
+                    </td>
+                    <td>
+                        <span *ngIf="!empleado.editing">{{empleado.salida}}</span>
+                        <input *ngIf="empleado.editing" [(ngModel)]="empleado.salida">
+                    </td>
+                    <td>
+                        <button class="icon-btn" (click)="removeRow(empleado)">&#10060;</button>
+                        <button class="icon-btn" (click)="removeRow(empleado)">&#9989;</button>
+                        <button class="icon-btn" (click)="editRow(empleado)" *ngIf="!empleado.editing">&#9998;</button>
+                        <button class="icon-btn" (click)="saveRow(empleado)" *ngIf="empleado.editing">&#10004;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
